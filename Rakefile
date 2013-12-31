@@ -37,8 +37,8 @@ Motion::Project::App.setup do |app|
   # app.vendor_project('vendor/Flurry', :static)
   # app.vendor_project('vendor/DSLCalendarView', :static, :cflags => '-fobjc-arc') # Using arc
   #
-  # app.pods do
-  #   pod 'AFNetworking'
-  # end
+  app.pods do
+    pod 'AFNetworking'
+  end
  
 end
