@@ -10,6 +10,7 @@ class MainController < UIViewController
     rmq.append(UILabel, :search_label)
 
     @query = rmq.append(UITextField, :query).focus.get
+    @query.text = "pino"
     rmq.append(UIButton, :submit_button).on(:touch) do |sender|
       search_for_images @query.text
     end
